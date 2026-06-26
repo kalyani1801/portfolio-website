@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .container{
+        height: 100%;
+        width:fit-content;
+        background-color: black;
+        color: white;
+        padding-left: 1.5%;
+        padding-bottom: 1.5%;
+        padding-right: 1.5%;
+        padding-top: 1.5%;
+    }
+    .container1{
+        height: 100px;
+        width: 100%;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main1{
+        height: 100%;
+        width: 100%;
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+        padding-left: 20%;
+        padding-right: 3%;
+    }
+    .btn1{
+        height: 55px;
+        width: 120px;
+        color: white;
+        font-size: 25px;
+        background-color: darkmagenta;
+        border-radius: 7px;
+    }
+    .a{
+        display: flex;
+    }
+    .container2{
+        height: 850px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    .b{
+        height: 100%;
+        width: 900px;
+        display:flex;
+        flex-direction: column;
+    }
+    .main2{
+        font-size: 20px;
+        color: darkmagenta;
+    }
+    .main3{
+        font-size: 80px;
+    }
+    .main4{
+        font-size: 20px;
+        height: 100%;
+        width: 700px;
+    }
+    .btn2{
+        height: 60px;
+        width: 300px;
+        background: linear-gradient(to right,rgb(255, 0, 144),darkmagenta);
+        border-radius: 8px;
+        font-size: 20px;
+    }
+    .btn3{
+        height: 60px;
+        width: 300px;
+        color: white;
+        border-radius: 8px;
+        border-color: whitesmoke;
+        background-color: transparent;
+        font-size: 20px;
+    }
+    .img1{
+        height: 400px;
+        width: 400px;
+        border: 5px solid purple;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .c{
+        height: 100%;
+        width: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 20%;
+    }
+    .container3{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        margin-top:0%;
+    }
+    .btn4{
+        height: 60px;
+        width: 350px;
+        color: white;
+        border-radius: 3px;
+        border-color: rgba(128, 128, 128, 0.197);
+        background-color:  rgba(128, 128, 128, 0.197);
+        font-size: 25px;
+    }
+    .btn5{
+        height: 60px;
+        width: 350px;
+        color: white;
+        border-radius: 3px;
+        border-color: rgba(128, 128, 128, 0.197);
+        background-color: rgba(128, 128, 128, 0.197);
+        font-size: 25px;
+    }
+    .btn6{
+        height: 60px;
+        width: 350px;
+        color: white;
+        border-radius: 3px;
+        border-color:  rgba(128, 128, 128, 0.197);
+        background-color:  rgba(128, 128, 128, 0.197);
+        font-size: 25px;
+    }
+    .img2{
+        height: 600px;
+        width: 600px;
+        border: rgba(128, 128, 128, 0.197);
+        border-radius: 8px;
+        object-fit: cover;
+    }.container4{
+        height: 700px;
+        width: 100%;
+        display: flex;
+        background-color: rgba(128, 128, 128, 0.197);
+        align-items: center;
+        justify-content:left;
+    }
+    .main5{
+        height: 100%;
+        width: 40%;
+        padding-left: 200px;
+        font-size: 30px;
+    }
+    .container5{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .e{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main7{
+        font-size: 30px;
+        color: darkmagenta;
+    }
+    .main8{
+        font-size: 50px;
+    }
+    .main9{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .img3{
+        height: 100px;
+        width: 100px;
+    }
+    .main91{
+        height: 100%;
+        width: 17%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        padding: 50px 50px 50px 50px;
+        border-radius: 8px;
+        background-color:  rgba(128, 128, 128, 0.197);
+       
+    }
+    .main92{
+        height: 100%;
+        width: 17%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+         padding: 50px 50px 50px 50px;
+         border-radius: 8px;
+        background-color:  rgba(128, 128, 128, 0.197);
+    }
+    .main93{
+        height: 100%;
+        width: 17%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+         padding: 50px 50px 50px 50px;
+         border-radius: 8px;
+        background-color:  rgba(128, 128, 128, 0.197);
+    }
+    .main94{
+        height: 100%;
+        width: 17%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+         padding: 50px 50px 50px 50px;
+         border-radius: 8px;
+        background-color:  rgba(128, 128, 128, 0.197);
+    }
+    .j{
+        width: 80%;
+    }
+    .container6{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+         background-color: rgba(128, 128, 128, 0.197) ;
+    }
+    .container11{
+        height: 100%;
+        width: 100%;
+        font-size: 30px;
+        color: darkmagenta;
+        display: flex;
+        
+    }
+    .main11{
+        font-size: 50px;
+        
+    }
+    .main111{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 30%;
+        padding: 50px 50px 50px 50px;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+    .k{
+        display: flex ;
+        font-size: 28px;
+        
+    }
+    .main13{
+        font-size: 50px;
+    }.main131{
+        display: flex ;
+        font-size: 28px;
+    }
+    .main12{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 35%;
+       padding: 50px 50px 50px 50px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .container12{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+    }
+    .container7{
+        height: 100%;
+        width: 100%;
+    }
+    .img4{
+        height: 400px;
+        width: 100%;
+    }
+    .main15{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .main151{
+        height: 100%;
+        width: 20%;
+        font-size: 28px;
+        padding: 40px 40px 40px 40px;
+        background-color: rgba(128, 128, 128, 0.197) ;
+        border-radius: 20px;
+    }
+    .main152{
+        height: 100%;
+        width: 20%;
+        font-size: 28px;
+        padding: 40px 40px 40px 40px;
+        background-color: rgba(128, 128, 128, 0.197) ;
+        border-radius: 20px;
+    }
+    .main153{
+        height: 100%;
+        width: 20%;
+        font-size: 28px;
+        padding: 40px 40px 40px 40px;
+        background-color: rgba(128, 128, 128, 0.197) ;
+        border-radius: 20px;
+    }
+    .btns{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        justify-content: space-between;
+    }
+    .btn7{
+        height: 60px;
+        width: 140px;
+        font-size: 20px;
+        border-radius: 30px;
+        background: linear-gradient(to right,rgb(255, 0, 144),darkmagenta);
+    }
+    .container13{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+    }
+    .img5{
+        height: 100px;
+        width: 100px;
+    }
+    .main17{
+        height: 350px;
+        width: 18%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 28px;
+        padding: 20px 20px 20px 20px;
+        background-color: rgba(128, 128, 128, 0.197);
+    }
+    .container8{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .m{
+        font-size: 32px;
+    }
+    .container9{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        margin-top: 70px;
+         background-color: rgba(128, 128, 128, 0.197) ;
+         padding-left: 20px;
+    }
+    .main20{
+        height: 100%;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .main21{
+        height: 300px;
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        font-size: 28px;
+        align-items: center;
+        padding: 25px 25px 25px 25px;
+    }
+    .n{
+        font-size: 50px;
+    }
+    .main23{
+        font-size: 28px;
+    }
+    .main22{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .o{
+        color: darkmagenta;
+    }
+    .container10{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        background-color: rgba(128, 128, 128, 0.197) ;
+    }
+    .main24{
+        height: 100%;
+        width: 30%;
+        font-size: 28px;
+    }
+    .img6{
+        height: 300px;
+        width: 500px;
+    }
+    .main25{
+        height: 100%;
+        width: 20%;
+        font-size: 28px;
+    }
+    .btn13{
+        height: 60px;
+        width: 140px;
+        font-size: 20px;
+        border-radius: 30px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div  class="container1">
+            <h1 class="a">Kalyani <span style="color:darkmagenta;"> .</span></h1>
+            <div class="main1">
+              <h2>Home</h2>
+              <h2>About</h2>
+              <h2>Skills</h2>
+              <h2>Projects</h2>
+              <h2>Services</h2>
+              <h2>Contact</h2>
+              <button class="btn1">Hire Me</button>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="b">
+            <h2 class="main2">WELCOME TO MY PORTFOLIO</h2>
+            <p class="main3">Hi,I'm <span style="color:darkmagenta;">Kalyani</span><br>IT Student & <br>
+            Frontend Developer</p>
+            <div class="main4">
+                <p>I am a passionate Information Technology student who loves bullding responsive websites and smart technology-based projects. I enjoy creating clean Ul designs, learning new technologies, and solving real-world problems through coding and innovation.</p>
+                <br>
+                <button class="btn2">View Projects</button>
+                <button class="btn3">⬇️Download Resume</button>
+            </div>
+            </div>
+            <div class="c"><img src="kalyani profile.jpeg" alt="image not available" class="img1"></div>
+        </div>
+        <div class="container3">
+                <button class="btn4">♎Frontend Developer</button>
+                <button class="btn5">👩‍🎓IT Undergraduate</button>
+                <button class="btn6">👍Creative Problem Solver</button>
+        </div>
+        <div class="container4">
+            <div class="d"><img src="kalyani2.jpeg" alt="image not available" class="img2"></div>
+            <div class="main5">
+                <h2 class="main6">ABOUT ME</h2>
+                <p>I am currently pursuing B.Tech in Information Technology with strong interest in Web Development, UI Design, and emerging
+technologies.</p><br>
+
+<p>I enjoy designing modern and responsive websites using HTML and CSS while continuously improving my programming and proble solving skills. I am also interested in Al-based applications and innovative software solution.</p><br>
+<p>I am a quick learner, team player, and always ready to explore new technologies and opportunities that help me grow professionally.</p>
+            </div>
+        </div>
+        <div class="container5">
+            <div class="e">
+            <h3 class="main7">WHAT I DO</h3>
+            <h1 class="main8">My Services</h1>
+            </div>
+            <div class="main9">
+                <div class="main91">
+                    <img src="https://images.openai.com/static-rsc-4/QRkdDkSqudQa39Fvyf6cyXaEtYgubmxaahy-5RobEr9LbvuV5WdFzVYhgPUBOHFAVO-VdG0w175p9YigRD-HKCS0Bw877fgPTV3qxB5i5gH3UnLN8Gg_xBNdUI3mqZMoXtQx3iHzkvw900ukHwZbGxFzpsRW8yqqZ0TTspVUVIaTwt89rhLLjfs1ZXif3GKo?purpose=fullsize" class="img3">
+                    <h2 class="f">Web Design</h2>
+                    <p class="j">Creating modern,responsive and visually appearing website designs.</p>
+                </div>
+                <div class="main92">
+                    <img src="https://images.openai.com/static-rsc-4/PzCfatO2mxesQRqjo4ZglaU-aabaFvjc5IMoN50UNcw0A2GCPoKXe-6ZFUEvy5b04LDYmF32E-FIb1lklgaucg70_10Zql8QlDWcyftZ_ITGIYzOFw6Pg5KzU-k2jMS_cL9T4aRpktIXvApa____rWMHmlZ6Upa98W33ZLWPIbuzveRPNu6Nw7pWT5RP2nGv?purpose=fullsize" class="img3">
+                    <h2 class="g">Frontend Development</h2>
+                    <p class="j">Developing user-friendly web interfaces using HTML,CSS,and responsive layouts.</p>
+                </div>
+                <div class="main93">
+                    <img src="https://images.openai.com/static-rsc-4/475Hx7YG45SfylZXJDxmRejF4Vgr2PIBrbvuXrG3rJgl0gco4PNa1ZjJ0jRG8Q65eBrligL3f4qgI0y0mlDyE8B1NcgwxNCLnHjqDK5xi2y_o446wf5f0B-2ApLp-vsxI6Fo91pmZ-lelQaqDynJ7Oi_gFUkkQqxHVoePL-WFaKlS2aZz2iP9uX4IpkilmyJ?purpose=fullsize" class="img3">
+                    <h2 class="h">UI/UX Design</h2>
+                    <p class="j">Designing clean and attractive user experiences for websites and apps.</p>
+                </div>
+                <div class="main94">
+                    <img src="https://images.openai.com/static-rsc-4/5mvgQlXdKWwMxRzALiqDKo9JN4167feQU-t1FAYKw_UobWsv_diAtW4ZzSjK4MFaZ4MdK4-bIsQ-Sic8sEHA1WfnBKh9BV-bF03irUYD0riXO2IoSLysjCVoKiNTv8broYxXyVud1frGOlE70YlX4p9XO6wiWV931N6mPkMfee_-OGsRARsht5iSKm1oFP35?purpose=fullsize" class="img3">
+                    <h2 class="i">Problem Solving</h2>
+                    <p class="j">Applying logical thinking and technical skills to solve programming challenges.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container11">
+        <div class="l">
+            <h3 class="main10">MY SKILLS</h3>
+            </div>
+            </div>
+        <div class="container6">
+            <div class="main111">
+            <h2 class="main11">Technical Skills</h2>
+            <div class="k">
+            <div class="main112">
+            <p>HTML </p> <br>
+            <p>CSS</p><br>
+            <p>PYTHON</p><br>
+            <p>C Programming</p><br>
+            </div>
+            <div class="main113">
+            <p>Java Basics</p> <br>
+            <p>Git & GitHub</p><br>
+            <p>Responsive Design</p><br>
+            </div>
+            </div>
+            </div>
+            <div class="main12">
+                <h2 class="main13">Professional Skills</h2>
+                <div class="main131">
+                <div class="main132">
+                    <p>Communication</p> <br>
+                    <p>Leadership</p><br>
+                    <p>Teamwork</p><br>
+                </div>
+                <div class="main133">
+                    <p>Creativity</p> <br>
+                    <p>Time Management</p><br>
+                    <p>Problem Solving</p><br>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="container12">
+            <h3 class="main14">My Projects</h3>
+        </div>
+        <div class="container7">
+            
+            <div class="main15">
+                <div class="main151">
+                    <img src="https://images.openai.com/static-rsc-4/97r4A6SGWLNyFY6Lnv7NOBhDFY8KUslSmGts0yckw9_zp4i7cEws24zbiX1E4mupNygdnEiXrjX5Qo3Wb5weVFAaRIQe13EVUdZ5k_ctLvPL5iukJN13pHmhI72WgkGzucU9GhsepxlyIA71DW728hQKiAzoid6IJFX6gt_8u1uL5Ke5CrRFCcPfO4OcUQpA?purpose=fullsize" class="img4">
+                    <h4>Enhanced Eye Gaze Based Mouse Control System</h4>
+                    <p>Developed an innovative systen allows mouse control using eye movements. The project uses computer vision and facial landmark tracking technologies.</p>
+                    <div class="btns">
+                    <button class="btn7">Python</button>
+                    <button class="btn7">OpenCV</button>
+                    <button class="btn7">MediaPipe</button>
+                    </div>
+                </div>
+                <div class="main152">
+                    <img src="https://images.openai.com/static-rsc-4/6hMzSTmOAkhC17OKyXQFmhOyHTTgdnVcPNZ5u08nW8U7EgQ6wujITELpx4OZfhR4QRTD1fE6wH8z18DLOMY1sPbySOBz-S1VQCbatXstVbGjqjW9f3m8lIVD_xy-7uW8MrOcK9upFjx7KietqjsBDWA0umGB6Alw4nULSv2GqvNDX-AgojjpI0lB3Cm2PaKp?purpose=fullsize" class="img4">
+                    <h4>Online Resume Builder</h4>
+                    <p>Developed a modern Online Resume Builder website that allows users to create professional resumes easily using customizable templates and user-friendly forms.</p>
+                    <div class="btns">
+                    <button class="btn7">HTML</button>
+                    <button class="btn7">CSS</button>
+                    <button class="btn7">JavaScript</button>
+                    </div>
+                </div>
+                <div class="main153">
+                    <img src="https://images.openai.com/static-rsc-4/xMf5Gfz1sCYViRl4NRSKpxGwMqMa7HH0K6O64BSZZiCIu5dGAo1KrEFf9Y6HVAhCWOjndq5Gm3yRScdrqeTGJoJZANGv4wh5S61CNH3AbQSZLsvelIcvVHKbCTeOGwd3Z61A_ML2gg0oMD_1iin9uOTs3gA6aQ74SXaMVKzshI3qn8p2m0EljSTGouPyVEIb?purpose=fullsize" class="img4">
+                    <h4>Exam Countdown Tree</h4>
+                    <p>Developed an Exam Countdown Tree App that helps students track upcoming exams with countdown timers and visual progress representation.</p>
+                    <div class="btns">
+                    <button class="btn7">HTML</button>
+                    <button class="btn7">CSS</button>
+                    <button class="btn7">JavaScript</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container13">
+             <h3 class="main16">EXPERIENCE & CERTIFICATIONS</h3>
+        </div>
+        <div class="container8">
+            <div class="main17">
+                <img src="https://images.openai.com/static-rsc-4/jdv-I7gwywI93Y___0Dju7_d2rRhSYGCgQ_oYh1HZIZn_NmvQiLNi4rjfqVQC4ocbCA9VKOFLtHrYjyKMWNfRk-IQpsfvDVzCz4LdSsfL7SjkhMnmqHjTeeOVL4yjJ35lKR5PebL4o8pywVDlSOwlelcOK9ustc_RwPgj6nZs-UteFZpx1xdYrSALo-dOlkx?purpose=fullsize" class="img5">
+                <div class="171">
+                <h4 class="m">Machine Learning Certification</h4>
+                <p>Completed NPTEL Elite Certification in Machine Learning and gained knowledge in AI and data analysis concepts.</p>
+                </div>
+            </div>
+            <div class="main17">
+                <img src="https://images.openai.com/static-rsc-4/5F1MGiXNlu_feD5yHC_YG5EzbRT3RZbUMfkqgVvzpm4y11iCSTNkml8E3u9rLJEsBRzwBeJc540NpyVVHWjeBQGSahLPqu5MPkBJhfZWWVRufp33B2SUNOqJD9JPTgAUuM66FtETMfxViGGQZZp2iofk3saZvh1WPKJX3w4c-I6JCR0idz5ic6eu0L6Kn5aw?purpose=fullsize" class="img5">
+                <div class="181">
+                <h4 class="m">AICTE AIML Virtual Internship</h4>
+                <p>Completed AICTE AIML Virtual Internship through Eduskills Foundation with practical exposure to AI and Machine Learning technologies.</p>
+                </div>
+            </div>
+            <div class="main17">
+                <img src="https://images.openai.com/static-rsc-4/IjX7HJ_PuCbAh2YsNtvVTTivGniLVaVhV3_nzUHLwC9gXXbV3CXeKpMk_VXUM298m-7ljWvmv526BSYgX3xw0w0dyOs5_pEhV9YRDKW0oPN7NP9_YoXQ_KIP473L655z6SOQnGbyQ0D1nXAHAvy1S3CavTRFrH95lOgoD3IHXcXufVVY-uq7sJnzJJTuw8aT?purpose=fullsize" class="img5">
+                <div class="191">
+                <h4 class="m">UI/UX Design Workshop</h4>
+                <p>Participated in UI/UX Design Workshop and learned modern interface design and user experience principles.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container9">
+            <div class="main20">
+                <h3 class="n">Education</h3>
+                <div class="main21">
+                    <div class="main211">
+                    <img src="https://images.openai.com/static-rsc-4/INz6gyxcqVZcbB2HdYSHkaupTNQlWml90c2lSnF4sESET7w27vrBPLJVF-4fq3Q3F5ziGtRvXopp4byzzUV-RORLhwAImdX-i-VDnzP2daNGTh8LLXaa8w-CGzMiSM1kv4OoOOKfNSf-D5hosydXZJQ-LvXauqNlZM3cOJUsmZYFQVj0ucqqatWj1XnWy1sJ?purpose=fullsize" class="img5">
+                    </div>
+                    <div class="main212">
+                    <p><b>B.Tech-Information Technology</b></p><br>
+                    <p>NNRG College of Engineering and Technology</p><br>
+                    <p class="o">2023-2027</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main22">
+                <h3 class="n">Achievements</h3>
+                <div class="main23">
+                    <p>✅Developed AI and web-based academic projects.</p><br>
+                    <p>✅Completed certifications in Machine Learning and UI/UX.</p><br>
+                    <p>✅Built responsive websites using HTML and CSS.</p><br>
+                    <p>✅Participated in technical workshops and team projects.</p><br>
+                </div>
+            </div>
+        </div>
+        <div class="container10">
+            <div class="main24">
+            <h3 class="n">Let's Connect</h3>
+            <p>I am open to internships, collaborations, and opportunities related to Web Development and Information Technology.</p>
+            <button class="btn13">Contact Me</button>
+            </div>
+            <div class="main25">
+                <p>💌kalyanigandham36@gmail.com</p>
+                <p>📞9989183368</p>
+                <p>⭕Hyderabad,India</p>
+            </div>
+            <div class="main26">
+                <img src="https://images.openai.com/static-rsc-4/XYLQuYDoorM_FBkM94LsCAzeTzlnLljRtigN_LLZX3nso1oo5OXP5xxItBXIcjlLjYd8hjDo9qqaUF6qluUBktmW40LZwegY2R5v4lGvBBllvfST2-xwl1NNG7PHBuzxGweJbiz3qymEwYfpc2fsOmrOKoQeUhUk1HYzH6U95OdYVgNqYHw8ZsOVMW7GrpEW?purpose=fullsize" class="img6">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
